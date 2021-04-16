@@ -1,7 +1,7 @@
 package chapter05.demos.demo01;
 
 /**
- * Aufzählungen
+ * Vererbung
  * 
  * @author Daniel Appenmaier
  *
