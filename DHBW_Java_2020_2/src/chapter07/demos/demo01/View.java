@@ -10,7 +10,7 @@ public class View {
 	/*
 	 * Attribute
 	 */
-	// Bildschirmelemente / Controls
+	// Controls
 	private TextField inputTextField;
 	private Button inputToOutputButton;
 	private Label outputLabel;

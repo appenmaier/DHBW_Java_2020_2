@@ -22,7 +22,7 @@ public class Demo0701 extends Application {
 	}
 
 	public void start(Stage primaryStage) throws Exception {
-		// Aufbau der Bühne, Aufbau der Szene(n) und Programmlogik
+		// Aufbau der Bühne und Aufruf der ersten Szene
 		System.out.println("start()");
 		View view = new View();
 		Scene scene = new Scene(view.getRoot());
