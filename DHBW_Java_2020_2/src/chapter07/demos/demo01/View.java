@@ -22,11 +22,11 @@ public class View {
 	 */
 	public View() {
 		inputTextField = new TextField();
-		inputTextField.setPromptText("Eingabefeld");
+		inputTextField.setPromptText("Eingabe");
 
 		inputToOutputButton = new Button("Eingabe zu Ausgabe");
 
-		outputLabel = new Label("Ausgabefeld");
+		outputLabel = new Label("Ausgabe");
 
 		root = new VBox();
 		root.getChildren().addAll(inputTextField, inputToOutputButton, outputLabel);
