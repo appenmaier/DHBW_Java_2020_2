@@ -24,7 +24,7 @@ public class Controller {
 	private ImageView javaFxImageView;
 
 	@FXML
-	public void inputToOutput(ActionEvent event) {
+	private void inputToOutput(ActionEvent event) {
 		// Eingabe auslesen
 		String text = inputTextField.getText();
 		// Eingabe anzeigen
