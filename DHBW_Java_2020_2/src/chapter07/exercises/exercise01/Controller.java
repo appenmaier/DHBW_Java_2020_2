@@ -8,9 +8,15 @@ import javafx.scene.control.Label;
 
 public class Controller {
 
+	/*
+	 * Attribute
+	 */
 	@FXML
 	private Label diceValueLabel;
 
+	/*
+	 * Methoden
+	 */
 	@FXML
 	private void rollTheDice(ActionEvent event) {
 		Random random = new Random();
