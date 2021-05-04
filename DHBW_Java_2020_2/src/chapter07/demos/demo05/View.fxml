@@ -10,9 +10,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="318.0" prefWidth="399.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="chapter07.demos.demo05.Controller">
+<BorderPane prefHeight="318.0" prefWidth="399.0"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="chapter07.demos.demo05.Controller">
 	<top>
-		<HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: 'red';" BorderPane.alignment="CENTER">
+		<HBox prefHeight="100.0" prefWidth="200.0"
+			style="-fx-background-color: 'red';" BorderPane.alignment="CENTER">
 			<children>
 				<Label fx:id="outputLabel" text="Ausgabe" />
 				<TextField fx:id="inputTextField" promptText="Eingabe" />
@@ -20,22 +23,27 @@
 		</HBox>
 	</top>
 	<bottom>
-		<HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: 'yellow';" BorderPane.alignment="CENTER">
+		<HBox prefHeight="100.0" prefWidth="200.0"
+			style="-fx-background-color: 'yellow';" BorderPane.alignment="CENTER">
 			<children>
-				<Button fx:id="inputToOutputButton" onAction="#inputToOutput" text="Eingabe zu Ausgabe" />
+				<Button onAction="#inputToOutput" text="Eingabe zu Ausgabe" />
 			</children>
 		</HBox>
 	</bottom>
 	<left>
-		<VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: 'blue';" BorderPane.alignment="CENTER" />
+		<VBox prefHeight="200.0" prefWidth="100.0"
+			style="-fx-background-color: 'blue';" BorderPane.alignment="CENTER" />
 	</left>
 	<right>
-		<VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: 'green';" BorderPane.alignment="CENTER" />
+		<VBox prefHeight="200.0" prefWidth="100.0"
+			style="-fx-background-color: 'green';" BorderPane.alignment="CENTER" />
 	</right>
 	<center>
-		<VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: 'white';" BorderPane.alignment="CENTER">
+		<VBox prefHeight="200.0" prefWidth="100.0"
+			style="-fx-background-color: 'white';" BorderPane.alignment="CENTER">
 			<children>
-				<ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+				<ImageView fitHeight="150.0" fitWidth="200.0"
+					pickOnBounds="true" preserveRatio="true">
 					<viewport>
 						<Rectangle2D />
 					</viewport>

@@ -17,8 +17,7 @@ public class Controller {
 	/*
 	 * Methoden
 	 */
-	@FXML
-	private void rollTheDice(ActionEvent event) {
+	public void rollTheDice(ActionEvent event) {
 		Random random = new Random();
 		Integer randomNumber = random.nextInt(6) + 1;
 		diceValueLabel.setText(randomNumber.toString());

@@ -27,9 +27,9 @@
 		<TextField fx:id="inputTextField" promptText="Eingabe"
 			GridPane.columnIndex="1" />
 		<Label fx:id="outputLabel" text="Ausgabe" />
-		<Button fx:id="inputToOutputButton" onAction="#inputToOutput"
-			text="Eingabe zu Ausgabe" GridPane.columnSpan="2"
-			GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+		<Button onAction="#inputToOutput" text="Eingabe zu Ausgabe"
+			GridPane.columnSpan="2" GridPane.halignment="CENTER"
+			GridPane.rowIndex="1" />
 	</children>
 	<padding>
 		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
