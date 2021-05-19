@@ -34,16 +34,22 @@ public class Controller {
 	 * Methoden
 	 */
 	public void calculateInterest(ActionEvent event) {
+		double initialCapital = 0;
+		double interestRate = 0;
+		int runningTime = 0;
+		
 		try {
-			Double initialCapital = Double.valueOf(initialCapitalTextField.getText());
-			Double interestRate = Double.valueOf(interestRateTextField.getText());
-			Integer runningTime = Integer.valueOf(runningTimeTextField.getText());
-			Double interest = initialCapital * Math.pow((1 + interestRate / 100), runningTime) - initialCapital;
-			interestLabel.setText(interest.toString());
+			initialCapital = Double.valueOf(initialCapitalTextField.getText());
+			interestRate = Double.valueOf(interestRateTextField.getText());
+			runningTime = Integer.valueOf(runningTimeTextField.getText());
 		} catch (NumberFormatException e) {
-			Alert alert = new Alert(AlertType.ERROR, "Ungültige oder fehlende Eingabe");
+			Alert alert = new Alert(AlertType.ERROR, e.getMessage());
 			alert.show();
+			return;
 		}
+
+		Double interest = initialCapital * Math.pow((1 + interestRate / 100), runningTime) - initialCapital;
+		interestLabel.setText(interest.toString());
 	}
 
 }
