@@ -1,4 +1,4 @@
-package chapter08.demos.demo04;
+package chapter08.demos.demo05;
 
 import java.net.URL;
 import java.util.ResourceBundle;

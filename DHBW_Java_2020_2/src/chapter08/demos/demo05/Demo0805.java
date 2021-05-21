@@ -1,4 +1,4 @@
-package chapter08.demos.demo04;
+package chapter08.demos.demo05;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,12 +7,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * Zeichenorientiertes Lesen und Schreiben von Objekten
+ * Byteorientiertes Lesen und Schreiben von Objekten (Serialisierung und
+ * Deserialisierung)
  * 
  * @author appenmaier
  *
  */
-public class Demo0804 extends Application {
+public class Demo0805 extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
@@ -26,7 +27,7 @@ public class Demo0804 extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
 		Scene scene = new Scene(root);
-		primaryStage.setTitle("Demo 8.4");
+		primaryStage.setTitle("Demo 8.5");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
